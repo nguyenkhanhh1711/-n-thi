@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Revision for the First Mid-Term Exam</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f8fbfd;--grid:#e4ecf1;--ink:#1d2b3a;--mute:#5d6f80;--blue:#cfe4f1;--blue2:#a9cfe5;--pink:#e58fa8;--pinkbg:#fde7ee;--card:#fff;--ok:#2e9e6b;--okbg:#e0f5ea;--bad:#d2466a;--badbg:#fde4eb;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#111a22;--grid:#1a2630;--ink:#e8f0f6;--mute:#9db0c0;--blue:#1f3647;--blue2:#2f5670;--pink:#f09ab3;--pinkbg:#3a2530;--card:#18232d;--ok:#5fd09a;--okbg:#17372a;--bad:#f27a9a;--badbg:#3d1f2b}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#111a22;--grid:#1a2630;--ink:#e8f0f6;--mute:#9db0c0;--blue:#1f3647;--blue2:#2f5670;--pink:#f09ab3;--pinkbg:#3a2530;--card:#18232d;--ok:#5fd09a;--okbg:#17372a;--bad:#f27a9a;--badbg:#3d1f2b}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:60px}
+body{margin:0;background:var(--bg) linear-gradient(var(--grid) 1px,transparent 1px) 0 0/28px 28px,linear-gradient(90deg,var(--grid) 1px,transparent 1px) 0 0/28px 28px;color:var(--ink);font:16px/1.65 "Be Vietnam Pro",system-ui,sans-serif}
+h1,h2{font-family:"Playfair Display",Georgia,serif;line-height:1.2;margin:0}
+nav{position:sticky;top:0;z-index:5;display:flex;gap:6px;align-items:center;overflow-x:auto;padding:10px 14px;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--grid)}
+nav a{white-space:nowrap;color:var(--ink);text-decoration:none;font-size:14px;padding:5px 12px;border-radius:20px}nav a:hover,nav a.dn{background:var(--blue)}
+nav .sc{margin-left:auto;white-space:nowrap;font-size:14px;color:var(--mute)}
+main{max-width:820px;margin:auto;padding:0 18px 80px}
+.hero{padding:70px 0 20px;position:relative}
+.hero h1{font-size:clamp(34px,7vw,58px);font-weight:700}.hero h1 i{font-weight:500;color:var(--pink)}
+.hero p{color:var(--mute);max-width:540px}
+.blk{position:absolute;right:0;top:40px;width:36%;height:180px;background:var(--blue);z-index:-1;border-radius:4px;animation:sl 1.2s ease-out}
+@keyframes sl{from{transform:translateX(60px);opacity:0}}
+section{padding:48px 0 4px}
+h2{font-size:clamp(24px,5vw,33px);margin-bottom:4px}.sub{color:var(--mute);margin:0 0 18px}
+.rv{opacity:0;transform:translateY(22px);transition:.7s}.rv.in{opacity:1;transform:none}
+.q{background:var(--card);border:1px solid var(--grid);border-radius:10px;padding:14px 18px;margin-bottom:12px}
+.q p{margin:0 0 8px;font-weight:500}
+.o{display:block;width:100%;text-align:left;font:inherit;color:var(--ink);background:none;border:1px solid var(--grid);border-radius:8px;padding:7px 12px;margin:5px 0;cursor:pointer;transition:.15s}
+.o:hover:not(:disabled){border-color:var(--blue2);background:var(--blue)}
+.o.sel{background:var(--blue);border-color:var(--blue2)}
+.o.ok{background:var(--okbg);border-color:var(--ok)}.o.no{background:var(--badbg);border-color:var(--bad);animation:sh .3s}
+@keyframes sh{25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+u{text-decoration-thickness:2px;text-underline-offset:3px;text-decoration-color:var(--pink)}
+.ex{display:none;margin-top:8px;padding:9px 12px;border-radius:8px;font-size:14.5px;background:var(--pinkbg)}.ex.show{display:block;animation:fd .4s}
+@keyframes fd{from{opacity:0;transform:translateY(-6px)}}
+.bar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:18px 0 0}
+.btn{font:inherit;font-size:15px;border:0;background:var(--pink);color:#fff;border-radius:22px;padding:8px 22px;cursor:pointer;transition:.2s}.btn:disabled{opacity:.4;cursor:not-allowed}
+.cnt{color:var(--mute);font-size:14px}
+.res{display:none;margin-top:14px;padding:16px;border-radius:12px;background:var(--blue);text-align:center;font-family:"Playfair Display",serif;font-size:28px}.res.show{display:block;animation:pop .5s}
+.res small{display:block;font:14px "Be Vietnam Pro",sans-serif;color:var(--mute)}
+@keyframes pop{from{transform:scale(.8);opacity:0}}
+#sum{display:none;text-align:center;background:var(--card);border:1px solid var(--blue2);border-radius:12px;padding:24px;margin-top:40px}#sum.show{display:block}
+#sum h2{margin-bottom:10px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<nav id="nv"></nav>
+<main>
+<header class="hero"><div class="blk"></div><h1>Revision for the<br><i>First Mid-Term Exam</i></h1>
+<p>Làm hết từng phần rồi bấm Nộp: điểm và đáp án giải thích của phần đó sẽ hiện ra. Làm lần lượt từ trên xuống.</p></header>
+<div id="app"></div>
+<div id="sum"><h2>Tổng kết</h2><div id="st"></div></div>
+</main>
+<script>
+const $=s=>document.querySelector(s);
+const S=[
+{t:"I. Pronunciation",sub:"Chọn từ có phần gạch chân phát âm khác các từ còn lại.",d:`metr[o]|[o]cean|l[o]cal|c[o]nflict|3|conflict: “o” đọc /ɒ/. Các từ còn lại đọc /əʊ/.
+fam[ou]s|nerv[ou]s|danger[ou]s|m[ou]ntain|3|mountain: “ou” đọc /aʊ/. Các từ còn lại có đuôi -ous đọc /əs/.
+seri[ou]s|th[ou]sand|f[ou]nd|ar[ou]nd|0|serious: đọc /əs/. Các từ còn lại đọc /aʊ/.
+t[ow]n|c[ow]|sn[ow]|br[ow]n|2|snow: “ow” đọc /əʊ/. Các từ còn lại đọc /aʊ/.
+[a]rtisan|f[a]therhood|[a]ttraction|h[a]ndicraft|2|attraction: “a” đầu đọc schwa /ə/. Các từ còn lại đọc /ɑː/ hoặc /æ/.
+[e]liminate|exp[e]dition|s[e]parate|pr[e]paration|0|eliminate: “e” đọc /ɪ/. Các từ còn lại đọc /e/.
+[e]ndangered|g[e]neration|acc[e]pt|m[e]morable|0|endangered: “e” đọc /ɪ/. Các từ còn lại đọc /e/.
+l[a]yer|occ[a]sion|c[a]st|pl[a]ce|2|cast: “a” đọc /ɑː/. Các từ còn lại đọc /eɪ/.
+r[e]gulator|p[er]sonal|r[e]feree|d[e]tective|1|personal: “er” đọc /ɜː/. Các từ còn lại đọc /e/ hoặc /ɪ/.
+p[o]ttery|l[o]cal|c[o]ntrol|f[o]ld|0|pottery: “o” đọc /ɒ/. Các từ còn lại đọc /əʊ/.
+s[ou]nd|cl[ou]d|t[ou]ch|acc[ou]nt|2|touch: “ou” đọc /ʌ/. Các từ còn lại đọc /aʊ/.
+b[a]sket|c[a]rry|g[a]rbage|p[a]ragraph|2|garbage: “a” đọc /ɑː/. Các từ còn lại đọc /æ/.`},
+{t:"II. Word Stress",sub:"Chọn từ có trọng âm khác các từ còn lại.",d:`workshop|opinion|museum|embroider|0|workshop: trọng âm 1. Các từ còn lại: o’pinion, mu’seum, em’broider (âm 2).
+control|lantern|carpet|basket|0|control: trọng âm 2. Các từ còn lại: ’lantern, ’carpet, ’basket (âm 1).
+fragrance|advice|suburb|garbage|1|advice: trọng âm 2. Các từ còn lại trọng âm 1.
+transfer|publish|accept|remind|1|publish: trọng âm 1. Các từ còn lại trọng âm 2 (trans’fer, ac’cept, re’mind).
+surface|attraction|bamboo|technique|0|surface: trọng âm 1. Các từ còn lại trọng âm 2.
+determine|pagoda|fabulous|convenient|2|fabulous: trọng âm 1. Các từ còn lại trọng âm 2.
+skyscraper|convenience|resident|vehicle|1|convenience: trọng âm 2. Các từ còn lại trọng âm 1.
+fascinate|expensive|restaurant|difference|1|expensive: trọng âm 2. Các từ còn lại trọng âm 1.
+intelligence|facility|development|education|3|education: trọng âm 3 (edu’cation). Các từ còn lại trọng âm 2.
+provide|product|promote|produce|1|product (n): trọng âm 1. Các từ còn lại (động từ) trọng âm 2.
+attend|pretend|content|percent|2|content (n, nội dung): trọng âm 1. Các từ còn lại trọng âm 2.
+advise|delay|mental|awake|2|mental: trọng âm 1. Các từ còn lại trọng âm 2.
+contain|express|carbon|obey|2|carbon: trọng âm 1. Các từ còn lại trọng âm 2.`},
+{t:"III. Vocabulary and Grammar",sub:"Chọn đáp án đúng nhất cho mỗi câu.",num:1,d:`1|My grandfather was born ___ a small coastal village in central Vietnam.|on|in|at|for|1|born in + làng, thành phố (không gian lớn).
+2|The local authorities are working hard to deal ___ the severe traffic congestion.|with|about|from|out of|0|deal with = giải quyết, đối phó với.
+3|Make sure you take ___ your shoes before entering the tea house.|from|away|out|off|3|take off = cởi (giày, mũ).
+4|We have run ___ fresh water bottles.|up with|away from|out of|down with|2|run out of = dùng hết, cạn kiệt.
+5|The old artisan is proud of passing ___ his silk-weaving skills to the younger generation.|down|with|from|on|0|pass down = truyền lại.
+6|The delivery person arrived ___ ten o’clock sharp.|in|on|at|for|2|at + giờ cụ thể.
+7|Do you get ___ well with your new classmates?|out|up|down|on|3|get on well with sb = hòa thuận với ai.
+8|The council plans to carry ___ a survey on public transport next month.|out|on|in|up|0|carry out a survey = tiến hành khảo sát.
+9|Don’t throw ___ those plastic bottles; we can sort and recycle them.|out|away|down|off|1|throw away = vứt đi.
+10|My grandparents handed ___ those skills to them many years ago.|up|out|down|off|2|hand down = truyền lại (giống pass down).
+11|It has great public ___, including a sports center and a library.|rules|problems|facilities|foods|2|public facilities = cơ sở vật chất công cộng.
+12|“Where are you going this evening?” “To John’s ___. He just bought a new apartment.”|wedding ceremony|birthday party|farewell party|house-warming party|3|Mới mua căn hộ mới nên là tiệc tân gia.
+13|We should call an ___ to fix the electrical wires.|electrician|actor|architect|artisan|0|electrician = thợ điện.
+14|“Did you buy this cake?” “No, a ___ brought it to my house.”|firefighter|electrician|delivery person|police officer|2|delivery person = nhân viên giao hàng.
+19|I don’t understand ___ to fix this pottery wheel.|who|how|why|whether|1|how + to V = cách để làm gì.
+20|The city council is holding a seminar on ___ this Friday.|traffic light|traffic safety|traffic noise|traffic jam|1|Tài xế cần học cách giữ an toàn: traffic safety.
+21|What should we do with the ___ from dinner?|amenities|garbage|leftovers|food waste|2|leftovers = thức ăn thừa, để hâm lại cho bữa trưa.
+22|The city council will ___ a survey on public transport next week.|turn into|throw away|come down|carry out|3|carry out a survey = tiến hành khảo sát.
+23|Living next to a ___ must be annoying with all the machinery.|entertainment centre|learning space|green space|construction site|3|construction site = công trường xây dựng.
+24|Severe ___ is a common issue near main roads (honking horns).|noise pollution|air pollution|food waste|water pollution|0|Tiếng còi xe gây noise pollution (ô nhiễm tiếng ồn).
+25|“Should we take the local bus?” “No, it’s very ___. It often arrives late or skips stops.”|fast|unreliable|reliable|punctual|1|Hay trễ, bỏ trạm nên là unreliable (không đáng tin).
+26|Using ___ like buses and trains saves me a lot of money.|public transport|private vehicles|health services|personal bikes|0|Xe buýt, tàu hỏa là public transport.
+27|Having enough ___ makes urban life much healthier.|construction site|green space|concrete jungle|noise pollution|1|green space = không gian xanh (công viên, cây cối).
+28|You must ___ for fast electric scooters.|watched out|watching out|watch out|to watch out|2|must + V nguyên mẫu; watch out for = cẩn thận với.
+29|The harder I study, ___ results I will achieve.|the better|the good|better|the best|0|So sánh kép: The + so sánh hơn, the + so sánh hơn.
+30|Do you want to ___ with me at the downtown plaza?|hang out|hand in|show up|give up|0|hang out = đi chơi, tụ tập.
+31|The closer you live to the main street, ___ it gets.|the noisy|the noisier|the noisiest|noisier|1|So sánh kép: the closer..., the noisier...
+32|I am here to ___ my brother so we can walk home together.|work out|concentrate on|wait for|turn off|2|wait for = đợi.
+33|Whenever I speak in public, I feel a wave of ___.|anxiety|electric equipment|counsellor|ingredient|0|a wave of anxiety = cơn lo âu ập đến.
+37|Why don’t we go biking ___ playing video games all afternoon?|instead of|thanks to|in order to|due to|0|instead of + V-ing = thay vì.
+38|Playing badminton every afternoon improves my ___.|ingredient|distraction|physical health|anxiety|2|physical health = sức khỏe thể chất.
+39|Eating too many sweet snacks and sitting all day might cause you to ___.|reduce stress|take a break|manage time|gain weight|3|gain weight = tăng cân.
+40|We should avoid eating too many ___ foods like potato chips and donuts.|thankful|optimistic|urgent|fattening|3|fattening = dễ gây béo.
+41|“If you join a social club, you ___ new friends.”|are meeting|meet|will meet|met|2|Điều kiện loại 1: If + hiện tại đơn, will + V.
+42|“If the wind ___ from the North, it will be very cold.”|blows|will blow|blow|blew|0|Điều kiện loại 1: mệnh đề If dùng hiện tại đơn (the wind blows).
+43|“It’s extremely hot today! Let’s go to the public swimming pool.”|That sounds like a wonderful idea!|No, thanks. I hate swimming.|I don’t believe you.|You are welcome.|0|Đáp lại lời rủ rê bằng sự đồng tình.
+44|“Do you get on well with your new classmates?”|No, they live far away.|Yes, they are very friendly and always help me.|Yes, it costs a lot of money.|No, I bought it yesterday.|1|Trả lời về mối quan hệ: họ rất thân thiện.
+45|“Could you give me a hand with these rubbish bins?”|Yes, go ahead.|Sure. I don’t like them much.|I couldn’t. They’re over there.|Certainly. Where do you want to put them?|3|Đáp lại lời nhờ giúp: Chắc chắn, bạn muốn đặt chúng ở đâu?
+46|“I heard your village is famous for a special kind of banh cuon.”|My village is very far from here.|It is used to make banh cuon.|That’s right! It has a very unique taste.|No, I don’t like banh cuon.|2|Xác nhận lời khen và bổ sung thông tin.
+47|“Why didn’t you attend the yoga class yesterday?”|The room is at the end of the hall.|I think I will join it next Tuesday.|I’m sorry, I was busy with my assignments.|Yoga is good for my mental health.|2|Câu hỏi “Why didn’t you...?” cần một lý do hợp lý.
+48|I don’t know ___ authentic local handicrafts in this ancient town.|where to buy|where buying|where should buy|buying where|0|Cấu trúc wh- + to V: where to buy.
+49|Would you mind ___ your phone while the counsellor is giving guidance?|turned off|to turn off|turn off|turning off|3|Would you mind + V-ing?
+50|Would you like ___ a short walk around the park with me?|take|taking|to take|taken|2|Would you like + to V?`}
+];
+const fm=s=>s.replace(/___/g,"<b>______</b>").replace(/\[(.+?)\]/g,"<u>$1</u>");
+let tot=0,mx=0,done=0;
+$("#nv").innerHTML=S.map((s,i)=>`<a href="#s${i}" id="n${i}">${s.t.split(".")[0]}</a>`).join("")+`<span class="sc" id="sc"></span>`;
+$("#app").innerHTML=S.map((s,si)=>{
+ s.q=s.d.split("\n").map((l,i)=>{const p=l.split("|");if(s.num){return{n:p[0],s:p[1],o:p.slice(2,6),a:+p[6],e:p[7]}}return{n:i+1,s:"",o:p.slice(0,4),a:+p[4],e:p[5]}});
+ return `<section class="rv" id="s${si}"><h2>${s.t}</h2><p class="sub">${s.sub}</p>${s.q.map((q,qi)=>`<div class="q" data-q="${qi}">${q.s?`<p>${q.n}. ${fm(q.s)}</p>`:`<p>Câu ${q.n}</p>`}${q.o.map((o,j)=>`<button class="o" data-j="${j}">${"ABCD"[j]}. ${fm(o)}</button>`).join("")}<div class="ex"></div></div>`).join("")}
+ <div class="bar"><button class="btn" disabled>Nộp phần này</button><span class="cnt">Đã làm 0/${s.q.length}</span></div><div class="res"></div></section>`}).join("");
+document.querySelectorAll("section").forEach((sec,si)=>{const s=S[si],ans={},btn=sec.querySelector(".btn"),cnt=sec.querySelector(".cnt");
+ sec.addEventListener("click",e=>{const o=e.target.closest(".o");if(!o||o.disabled)return;const q=o.closest(".q");q.querySelectorAll(".o").forEach(b=>b.classList.remove("sel"));o.classList.add("sel");ans[q.dataset.q]=+o.dataset.j;const n=Object.keys(ans).length;cnt.textContent=`Đã làm ${n}/${s.q.length}`;btn.disabled=n<s.q.length});
+ btn.onclick=()=>{let c=0;sec.querySelectorAll(".q").forEach(q=>{const it=s.q[q.dataset.q],g=ans[q.dataset.q],bs=q.querySelectorAll(".o");bs.forEach(b=>{b.disabled=true;b.classList.remove("sel")});bs[it.a].classList.add("ok");if(g!=it.a)bs[g].classList.add("no");else c++;const x=q.querySelector(".ex");x.innerHTML=`${g==it.a?"✔ Chính xác.":"✘ Chưa đúng."} Đáp án: <b>${"ABCD"[it.a]}</b>. ${fm(it.e)}`;x.classList.add("show")});
+  btn.disabled=true;const r=sec.querySelector(".res");r.innerHTML=`${c} / ${s.q.length}<small>Điểm phần ${s.t.split(".")[0]}</small>`;r.classList.add("show");r.scrollIntoView({behavior:"smooth",block:"center"});
+  tot+=c;mx+=s.q.length;done++;$("#sc").textContent=`Tổng ${tot}/${mx}`;$("#n"+si).classList.add("dn");
+  $("#st").innerHTML=`<div style="font:700 40px 'Playfair Display',serif">${tot} / ${mx}</div><p class="sub">${Math.round(tot/mx*100)}% câu đúng sau ${done}/${S.length} phần</p>`;$("#sum").classList.add("show")}});
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}}),{threshold:.03});
+document.querySelectorAll(".rv").forEach(s=>io.observe(s));
+</script>
+</body>
+</html>
